@@ -1,0 +1,18 @@
+@import '~bulma/bulma.sass';
+
+.is-primary {
+  background-color: #b5979a;
+}
+
+.box {
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+  color: #293347;
+  display: box;
+}
+
+.list-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
