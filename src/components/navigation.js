@@ -10,27 +10,22 @@ const NavContainer = styled.div`
   align-items: center;
 `
 
-const ListItem = styled.li`
-  list-style: none;
-`
+// const li = styled.li`
+//   list-style: none;
+// `
 
 class Navigation extends Component {
   render() {
     return (
-      <NavContainer>
-        <ListItem>
-          <Link to="/about">About</Link>
-        </ListItem>
-        <ListItem>
-          <Link>My Work</Link>
-        </ListItem>
-        <ListItem>
-          <Link>Blog</Link>
-        </ListItem>
-        <ListItem>
-          <Link>Contact</Link>
-        </ListItem>
-      </NavContainer>
+      <nav>
+        <a href="#about">About</a>
+
+        <a href="#my-work">My Work</a>
+
+        <a href="#blog">Blog</a>
+
+        <a href="#contact">Contact</a>
+      </nav>
     )
   }
 }

@@ -5,7 +5,10 @@ const AboutContainer = styled.div``
 
 const About = () => {
   return (
-    <section class="section is-medium is-primary has-text-centered is-long">
+    <section
+      id="about"
+      class="section is-medium is-primary has-text-centered is-long"
+    >
       <div class="container">
         <div class="columns is-centered">
           <div class="column is-three-fifths">
