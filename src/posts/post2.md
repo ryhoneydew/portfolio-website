@@ -1,7 +1,8 @@
 ---
-slug: '/second-post'
-title: 'Our second post'
-date: '2018-10-16'
+slug: '/redux-thunk-or-redux-saga-part-two'
+title: 'Redux-thunk or Redux-saga? (Part 2)'
+date: '2018-11-13'
+url: 'https://medium.com/@lucia.yang88/redux-thunk-or-redux-saga-part-2-aa4b777a0b21'
 ---
 
 #Yo

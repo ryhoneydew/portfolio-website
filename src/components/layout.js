@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-import { Spring } from 'react-spring'
 import Header from './header'
 //import './layout.css'
 import './style.scss'
@@ -11,6 +10,8 @@ import Helmet from './helmet'
 import IntoSection from './IntroSection'
 import Skills from './skills'
 import WorkCollection from './work-collection'
+
+import Blogs from './blogs'
 
 const MainLayout = styled.main`
   max-width: 90%;
@@ -46,6 +47,7 @@ const Layout = ({ children, location }) => (
         <About />
         <Skills />
         <WorkCollection />
+        <Blogs />
       </>
     )}
   />

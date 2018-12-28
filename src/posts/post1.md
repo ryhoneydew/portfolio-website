@@ -1,7 +1,8 @@
 ---
-slug: '/first-post'
-title: 'Our first post'
-date: '2018-10-15'
+slug: '/redux-thunk-or-redux-saga-part-one'
+title: 'Redux-thunk or Redux-saga? (Part 1)'
+date: '2018-11-12'
+url: 'https://medium.com/@lucia.yang88/redux-thunk-or-redux-saga-part-1-1d009de9ded2'
 ---
 
 #Hello
