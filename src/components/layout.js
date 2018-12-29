@@ -10,7 +10,7 @@ import Helmet from './helmet'
 import IntoSection from './IntroSection'
 import Skills from './skills'
 import WorkCollection from './work-collection'
-
+import Footer from './footer'
 import Blogs from './blogs'
 
 const MainLayout = styled.main`
@@ -32,7 +32,7 @@ const Layout = ({ children, location }) => (
         }
         file(relativePath: { regex: "/groupWork/" }) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 2500) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -43,11 +43,8 @@ const Layout = ({ children, location }) => (
       <>
         <Helmet />
         <Header siteTitle={data.site.siteMetadata.title} />
-        <IntoSection image={data.file.childImageSharp.fluid} />
-        <About />
-        <Skills />
-        <WorkCollection />
-        <Blogs />
+        <div>{children}</div>
+        <Footer />
       </>
     )}
   />

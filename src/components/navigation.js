@@ -22,7 +22,7 @@ class Navigation extends Component {
 
         <a href="#my-work">My Work</a>
 
-        <a href="#blog">Blog</a>
+        <a href="#blogs">Blog</a>
 
         <a href="#contact">Contact</a>
       </nav>

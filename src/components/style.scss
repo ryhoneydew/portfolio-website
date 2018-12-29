@@ -65,6 +65,20 @@ nav a {
   background-color: #b5979a;
 }
 
+.into-container {
+  // display: block;
+  // width: 100vw;
+  // text-align: center;
+  // top: 25vh;
+  // color: #400101;
+  // position: absolute;
+  // z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .box {
   border-radius: 12px;
   background-color: #fff;
@@ -72,7 +86,10 @@ nav a {
   color: #293347;
   display: flex;
 }
-
+.image-container {
+  display: flex;
+  justify-content: center;
+}
 .list-title {
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -119,4 +136,19 @@ nav a {
   font-size: 0.8rem;
   text-decoration: underline;
   color: #524763;
+}
+.footer {
+  color: #400101;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  span {
+    margin-right: 1.2rem;
+  }
+  a {
+    color: $grey-dark;
+  }
+  a:hover {
+    color: #400101;
+  }
 }
