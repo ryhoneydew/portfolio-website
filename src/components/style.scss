@@ -223,12 +223,14 @@ textarea {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 input[type='text']:focus,
 [type='email']:focus,
 textarea:focus {
   outline: none;
   padding: 0 0 0.875em 0;
 }
+
 .name {
   float: left;
   width: 45%;
