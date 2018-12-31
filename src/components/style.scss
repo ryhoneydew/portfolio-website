@@ -5,6 +5,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
+  // background: #f2f3eb;
   margin: 0;
 }
 h1 {
@@ -25,6 +26,9 @@ h1 {
   line-height: 1.1;
 }
 
+.main-layout {
+  margin: 4rem auto;
+}
 .site-header {
   background: #b5979a;
   color: #400101;
@@ -151,4 +155,85 @@ nav a {
   a:hover {
     color: #400101;
   }
+}
+
+.contact-container {
+  margin-top: 5rem;
+  padding: 2rem;
+  border: solid 3px #400101;
+  color: #400101;
+}
+
+.meida-container {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  span {
+    margin-right: 1.2rem;
+  }
+  a {
+    color: $grey-dark;
+  }
+  a:hover {
+    color: #400101;
+  }
+}
+.underline {
+  border-bottom: solid 2px #400101;
+  margin: -0.512em auto;
+  width: 10vw;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+form {
+  padding: 2rem;
+  margin: 3rem 0;
+}
+input[type='text'],
+[type='email'],
+select,
+textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #400101;
+  color: #400101;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+input[type='text']:focus,
+[type='email']:focus,
+textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+.name {
+  float: left;
+  width: 45%;
+}
+.email {
+  float: right;
+  width: 45%;
 }
