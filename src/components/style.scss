@@ -1,11 +1,14 @@
 @import '~bulma/bulma.sass';
+@import './variables.scss';
+
 html {
-  font-family: sans-serif;
+  font-family: $font;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
   // background: #f2f3eb;
+  font-family: $font;
   margin: 0;
 }
 h1 {
@@ -18,8 +21,8 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -66,7 +69,8 @@ nav a {
   color: #400101;
 }
 .is-primary {
-  background-color: #b5979a;
+  //background-color: #b5979a;
+  background: linear-gradient(-50deg, #654ea3, #eaafc8);
 }
 
 .into-container {
@@ -135,17 +139,20 @@ nav a {
   margin-bottom: 1rem;
 }
 .read-more {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 0.8rem;
   text-decoration: underline;
   color: #524763;
 }
 .footer {
+  position: absolute;
   color: #400101;
+  bottom: 0;
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 10rem;
   span {
     margin-right: 1.2rem;
   }
@@ -158,7 +165,7 @@ nav a {
 }
 
 .contact-container {
-  margin-top: 5rem;
+  margin-top: 6rem;
   padding: 2rem;
   border: solid 3px #400101;
   color: #400101;
@@ -197,8 +204,15 @@ form {
   padding: 2rem;
   margin: 3rem 0;
 }
+
+.message {
+  float: none;
+  background: white;
+}
+
 input[type='text'],
 [type='email'],
+[type='name'],
 select,
 textarea {
   background: none;
@@ -238,4 +252,27 @@ textarea:focus {
 .email {
   float: right;
   width: 45%;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 1.5rem 2rem;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.project-layout {
+  margin-top: 6rem;
 }

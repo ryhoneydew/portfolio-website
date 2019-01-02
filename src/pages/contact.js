@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { FaLinkedin, FaGithub, FaMedium } from 'react-icons/fa'
+import { FaRegArrowAltCircleDown } from 'react-icons/fa'
 
 const Contact = () => {
   return (
@@ -13,14 +13,44 @@ const Contact = () => {
           method="POST"
         >
           <div className="name">
-            <lable for="name">
-              <input type="name" name="name" placeholder="Your name" />
-            </lable>
+            <lable for="name" />
+            <input type="name" name="name" placeholder="Your name" />
           </div>
           <div className="email">
-            <lable for="email">
-              <input type="email" name="email" placeholder="Your email" />
-            </lable>
+            <lable for="email" />
+            <input type="email" name="email" placeholder="Your email" />
+          </div>
+          <div class="subject">
+            <label for="subject" />
+            <select
+              placeholder="Subject line"
+              name="subject"
+              id="subject_input"
+              required
+            >
+              <option disabled hidden selected>
+                Subject line
+              </option>
+              <option>I'd like to start a project</option>
+              <option>I'd like to ask a question</option>
+              <option>I'd like to hire you</option>
+              <span>
+                <FaRegArrowAltCircleDown />
+              </span>
+            </select>
+          </div>
+          <div class="message">
+            <label for="message" />
+            <textarea
+              name="message"
+              placeholder="Hi Rui, I'd like to chat about"
+              cols="30"
+              rows="5"
+              required
+            />
+          </div>
+          <div class="submit">
+            <input type="submit" value="Send Message" id="form_button" />
           </div>
         </form>
       </div>
