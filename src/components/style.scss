@@ -276,3 +276,12 @@ textarea:focus {
 .project-layout {
   margin-top: 6rem;
 }
+
+.tech-container {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  width: 75%;
+  margin: 2rem;
+}
