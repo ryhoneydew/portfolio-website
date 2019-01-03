@@ -38,7 +38,6 @@ const LandingPageContainer = styled.div`
 //   z-index: 2;
 // `
 const Button = styled.button`
-  color: black;
   border: 2px solid #400101;
   color: #400101;
   font-size: 1em;
@@ -57,7 +56,7 @@ const IntoSection = ({ image }) => (
           <h1>Hello! I am Rui</h1>
           <h3>I am a full-stack developer and designer.</h3>
           <h3>I design and code beautifully simple things</h3>
-          <Link>
+          <Link to="/contact">
             <Button>Say Hello</Button>
           </Link>
         </div>
