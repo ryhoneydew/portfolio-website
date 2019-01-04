@@ -50,7 +50,7 @@ const Projects = () => (
             <Img fluid={data.bookCovers.childImageSharp.fluid} />
             <figcaption>
               <h3>Graphic Design</h3>
-              <a href="/book-covers">More Info</a>
+              <a href="/design-work">More Info</a>
             </figcaption>
           </figure>
         </div>

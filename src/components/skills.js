@@ -11,7 +11,7 @@ const SKILL_IMAGE_QUERY = graphql`
         }
       }
     }
-    developer: file(relativePath: { eq: "developer.png" }) {
+    developer: file(relativePath: { eq: "developer1.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
@@ -32,31 +32,9 @@ const Skills = () => {
               <div className="box">
                 <div className="columns is-centered">
                   <div className="column">
-                    <div calssName="image-container">
+                    <div className="image-container">
                       <Img
-                        style={{ width: '40%' }}
-                        fluid={data.designer.childImageSharp.fluid}
-                      />
-                    </div>
-                    <p>
-                      I love web and graphic design. I value simple content
-                      structure, clean design patterns, and thoughtful
-                      interactions.
-                    </p>
-                    <p className="list-title has-text-primary has-text-weight-normal">
-                      Design Tools
-                    </p>
-                    <ul>
-                      <li>Adobe Photoshop</li>
-                      <li>Adobe Illustrator</li>
-                      <li>Adobe Indesign</li>
-                      <li>Pen & Paper</li>
-                    </ul>
-                  </div>
-                  <div className="column">
-                    <div calssName="image-container">
-                      <Img
-                        style={{ width: '70%' }}
+                        style={{ width: '69%' }}
                         fluid={data.developer.childImageSharp.fluid}
                       />
                     </div>
@@ -79,6 +57,28 @@ const Skills = () => {
                       React, Redux, Sequelize, Node.js, Express, Gatsby,
                       Socket.io, d3.js
                     </p>
+                  </div>
+                  <div className="column right-column">
+                    <div className="image-container">
+                      <Img
+                        style={{ width: '40%' }}
+                        fluid={data.designer.childImageSharp.fluid}
+                      />
+                    </div>
+                    <p>
+                      I love web and graphic design. I value simple content
+                      structure, clean design patterns, and thoughtful
+                      interactions.
+                    </p>
+                    <p className="list-title has-text-primary has-text-weight-normal">
+                      Design Tools
+                    </p>
+                    <ul>
+                      <li>Adobe Photoshop</li>
+                      <li>Adobe Illustrator</li>
+                      <li>Adobe Indesign</li>
+                      <li>Pen & Paper</li>
+                    </ul>
                   </div>
                 </div>
               </div>

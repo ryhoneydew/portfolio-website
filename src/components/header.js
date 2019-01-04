@@ -4,7 +4,7 @@ import React from 'react'
 
 const Header = ({ siteTitle }) => (
   <nav
-    className="navbar is-primary"
+    className="navbar is-primary site-header has-text-centered"
     role="navigation"
     aria-label="main navigation"
   >
@@ -24,8 +24,8 @@ const Header = ({ siteTitle }) => (
         <span aria-hidden="true" />
       </a>
     </div>
-    <div className="navbar-menu">
-      <div className="navbar-start menu-layout">
+    <div className=" navbar-menu">
+      <div className="navbar-end">
         <a className="navbar-item" href="/#about">
           About
         </a>

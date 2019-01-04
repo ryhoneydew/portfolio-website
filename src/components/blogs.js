@@ -48,9 +48,9 @@ const Blogs = () => (
             {allMarkdownRemark.edges.map(edge => (
               <article
                 key={edge.node.frontmatter.slug}
-                className="column is-12-mobile is-full-tablet is-full-desktop blog-container"
+                className="column is-12-mobile is-half-tablet is-half-desktop blog-container"
               >
-                <div>
+                <div className="card">
                   <h2 className="title">{edge.node.frontmatter.title}</h2>
                   <p class="subtitle">{edge.node.frontmatter.date}</p>
                   <p>{edge.node.excerpt}</p>
