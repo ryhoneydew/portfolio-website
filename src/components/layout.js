@@ -2,16 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import Header from './header'
-//import './layout.css'
+
 import './style.scss'
-import About from './about'
+
 import styled from 'styled-components'
 import Helmet from './helmet'
-import IntoSection from './IntroSection'
-import Skills from './skills'
-import WorkCollection from './work-collection'
+
 import Footer from './footer'
-import Blogs from './blogs'
 
 const MainLayout = styled.main`
   max-width: 90%;
@@ -43,8 +40,10 @@ const Layout = ({ children, location }) => (
       <>
         <Helmet />
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main className="main-layout">{children}</main>
-        <Footer />
+        <div className="main-layout">
+          {children}
+          <Footer />
+        </div>
       </>
     )}
   />

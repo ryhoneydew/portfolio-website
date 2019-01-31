@@ -31,44 +31,72 @@ h1 {
 }
 
 .main-layout {
-  margin: 4rem auto;
+  margin: 0 auto;
+  max-width: 960;
+  // padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
 }
 .site-header {
   font-family: $primary-font;
   width: 100%;
   display: grid;
-  position: fixed;
+  // position: fixed;
   grid-template-columns: 1fr 3fr;
   grid-gap: 1.5rem;
   align-items: center;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
-  margin: '0 auto';
+  opacity: 0.2;
+  margin-bottom: 2rem;
   padding: 1rem 4rem;
 }
 
 .is-primary {
   //background-color: #b5979a;
   //background: linear-gradient(-50deg, #654ea3, #eaafc8);
-  background: linear-gradient(120deg, #30cfd0 0%, #330867 100%);
+  // background: linear-gradient(120deg, #30cfd0 0%, #330867 100%);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.into-container {
-  // display: block;
-  // width: 100vw;
-  // text-align: center;
-  // top: 25vh;
-  // color: #400101;
-  // position: absolute;
-  // z-index: 2;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
+.intro-container {
+  height: 80vh;
+  z-index: -100;
+}
+
+.hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .box {
   border-radius: 12px;
   background-color: #fff;
@@ -133,13 +161,12 @@ article {
   color: #524763;
 }
 .footer {
-  position: fixed;
-  color: #400101;
+  color: white;
   bottom: 0;
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 10rem;
+  height: 8vh;
   span {
     margin-right: 1.2rem;
   }
@@ -260,9 +287,9 @@ textarea:focus {
   transition: all 0.3s;
 }
 
-.project-layout {
-  margin-top: 8rem;
-}
+// .project-layout {
+//   margin-top: 8rem;
+// }
 
 .tech-container {
   display: flex;

@@ -44,7 +44,7 @@ const Blogs = () => (
             Blogs
           </h1>
 
-          <div class="columns is-multiline is-mobile ">
+          <div className="columns is-multiline is-mobile ">
             {allMarkdownRemark.edges.map(edge => (
               <article
                 key={edge.node.frontmatter.slug}
@@ -52,10 +52,10 @@ const Blogs = () => (
               >
                 <div className="card">
                   <h2 className="title">{edge.node.frontmatter.title}</h2>
-                  <p class="subtitle">{edge.node.frontmatter.date}</p>
+                  <p className="subtitle">{edge.node.frontmatter.date}</p>
                   <p>{edge.node.excerpt}</p>
                   <Link
-                    class="read-more"
+                    className="read-more"
                     to={`/posts${edge.node.frontmatter.slug}`}
                   >
                     Read More

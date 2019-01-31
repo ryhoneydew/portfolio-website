@@ -19,7 +19,7 @@ const Dreamr = () => {
             <h3>Tech Stack:</h3>
           </div>
 
-          <div class="container tech-items">
+          <div className="container tech-items">
             <span className="tag ">Javascript</span>
             <span className="tag">React</span>
             <span className="tag">Redux</span>

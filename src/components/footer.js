@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 const Footer = () => {
   return (
-    <footer class="footer is-primary">
+    <footer className="footer is-primary">
       <div className="content has-text-centered">
         <article className="media center">
           <span className="icon">
@@ -28,7 +28,7 @@ const Footer = () => {
             </a>
           </span>
         </article>
-        <p>Build By Rui Yang</p>
+        <p>© {new Date().getFullYear()}, Built with Gatsby</p>
       </div>
     </footer>
   )

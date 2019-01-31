@@ -4,7 +4,7 @@ import React from 'react'
 
 const Header = ({ siteTitle }) => (
   <nav
-    className="navbar is-primary site-header has-text-centered"
+    className="navbar site-header has-text-centered"
     role="navigation"
     aria-label="main navigation"
   >
