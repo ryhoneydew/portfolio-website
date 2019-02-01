@@ -213,7 +213,7 @@ h1 {
   0% {
     -moz-transform: rotate(160deg);
     opacity: 0;
-    box-shadow: 0 0 1px #bdd73c;
+    box-shadow: 0 0 1px #23a6d5;
   }
   50% {
     -moz-transform: rotate(145deg);
@@ -236,7 +236,7 @@ h1 {
   0% {
     -webkit-transform: rotate(160deg);
     opacity: 0;
-    box-shadow: 0 0 1px #bdd73c;
+    box-shadow: 0 0 1px #23a6d5;
   }
   50% {
     -webkit-transform: rotate(145deg);
@@ -280,7 +280,7 @@ h1 {
 }
 .title {
   color: #363636;
-  //font-size: 1.7rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 1.125;
   text-align: center;

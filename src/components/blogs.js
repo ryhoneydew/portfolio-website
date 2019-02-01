@@ -40,10 +40,15 @@ const Blogs = () => (
         className="section is-medium is-white has-text-centered"
       >
         <div className="container">
-          <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">
-            Blogs
-          </h1>
-
+          <div className="section-title">
+            <div>
+              <div className="outerCircle" />
+              <div className="innerCircle" />
+            </div>
+            <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">
+              Blogs
+            </h1>
+          </div>
           <div className="columns is-multiline is-mobile ">
             {allMarkdownRemark.edges.map(edge => (
               <article
@@ -71,11 +76,3 @@ const Blogs = () => (
 )
 
 export default Blogs
-// <Post key={edge.node.frontmatter.slug}>
-//   <Link to={`posts${edge.node.frontmatter.slug}`}>
-//     <h2>{edge.node.frontmatter.title}</h2>
-//   </Link>
-//   <p>{edge.node.frontmatter.date}</p>
-//   <p>{edge.node.excerpt}</p>
-//   <Link to={`posts${edge.node.frontmatter.slug}`}> Read More </Link>
-// </Post>

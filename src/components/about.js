@@ -6,7 +6,7 @@ const About = () => {
     <section id="about" className="section is-medium has-text-centered is-long">
       <div className="container">
         <div className="columns is-centered">
-          <div className="column is-three-fifths is-size-3-desktop is-size-4-mobile profile-container">
+          <div className="column is-two-fifths is-size-3-desktop is-size-4-mobile profile-container">
             <Profile />
           </div>
           <div className="column is-three-fifths">

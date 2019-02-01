@@ -38,25 +38,25 @@ const Skills = () => {
                         fluid={data.developer.childImageSharp.fluid}
                       />
                     </div>
-                    <p>
+                    <h3>
                       I am passionate about coding. I tend to code things from
                       scratch, and enjoy bringing ideas to life in the browser.
-                    </p>
-                    <p className="list-title has-text-primary has-text-weight-normal">
+                    </h3>
+                    <h3 className="list-title has-text-primary has-text-weight-normal">
                       Languages
-                    </p>
+                    </h3>
                     <ul>
                       <li>Javasript</li>
                       <li>Html</li>
                       <li>CSS</li>
                     </ul>
-                    <p className="list-title has-text-primary has-text-weight-normal">
+                    <h3 className="list-title has-text-primary has-text-weight-normal">
                       Libraries/frameworks
-                    </p>
-                    <p>
-                      React, Redux, Sequelize, Node.js, Express, Gatsby,
-                      Socket.io, d3.js
-                    </p>
+                    </h3>
+                    <h3>
+                      React, Redux, Sequelize, Node.js, Graphql, Express.js,
+                      Gatsby, Socket.io, d3.js
+                    </h3>
                   </div>
                   <div className="column right-column">
                     <div className="image-container">
@@ -65,14 +65,14 @@ const Skills = () => {
                         fluid={data.designer.childImageSharp.fluid}
                       />
                     </div>
-                    <p>
+                    <h3>
                       I love web and graphic design. I value simple content
                       structure, clean design patterns, and thoughtful
                       interactions.
-                    </p>
-                    <p className="list-title has-text-primary has-text-weight-normal">
+                    </h3>
+                    <h3 className="list-title has-text-primary has-text-weight-normal">
                       Design Tools
-                    </p>
+                    </h3>
                     <ul>
                       <li>Adobe Photoshop</li>
                       <li>Adobe Illustrator</li>
