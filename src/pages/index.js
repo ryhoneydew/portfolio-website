@@ -21,6 +21,3 @@ const IndexPage = ({ location }) => (
 )
 
 export default IndexPage
-// <Layout location={location}>
-//     <Blogs />
-//   </Layout>

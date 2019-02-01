@@ -44,14 +44,37 @@ h1 {
   grid-template-columns: 1fr 3fr;
   grid-gap: 1.5rem;
   align-items: center;
+  justify-content: center;
   top: 0;
   left: 0;
   right: 0;
-  opacity: 0.2;
   margin-bottom: 2rem;
   padding: 1rem 4rem;
 }
 
+.navbar-brand {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  min-height: 3.25rem;
+  flex-wrap: nowrap;
+}
+.navbar-brand h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+.navbar-brand a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+.menu-padding {
+  padding-right: 2rem;
+}
+
+.navbar-end a {
+  font-size: 1.5rem;
+}
 .is-primary {
   //background-color: #b5979a;
   //background: linear-gradient(-50deg, #654ea3, #eaafc8);
@@ -97,6 +120,185 @@ h1 {
   flex-direction: column;
   justify-content: center;
 }
+
+@keyframes sheen {
+  0% {
+    transform: skewY(-45deg) translateX(0);
+  }
+  100% {
+    transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+
+.text-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.text-box h1 {
+  font-size: 3rem;
+}
+.text-box h3 {
+  font-size: 2rem;
+}
+
+.intro-button {
+  margin-top: 1.5rem;
+  padding: 0.5em 1.5em;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  color: $button-bg;
+  border: 2px solid $button-bg;
+  font-size: 24px;
+  display: inline-block;
+  border-radius: 0.3em;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: '';
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+  }
+  &:hover {
+    background-color: $button-bg;
+    color: #fff;
+    border-bottom: 4px solid darken($button-bg, 10%);
+    &:before {
+      transform: skewX(-45deg) translateX(13.5em);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+.outerCircle {
+  background-color: transparent;
+  border: 6px solid #23a6d5;
+  opacity: 0.9;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-radius: 100px;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 auto;
+  -moz-animation: spinPulse 3s infinite ease-in-out;
+  -webkit-animation: spinPulse 3s infinite ease-in-out;
+}
+.innerCircle {
+  background-color: transparent;
+  border: 5px solid #23d5ab;
+  opacity: 0.9;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-radius: 100px;
+  top: -3.1rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  margin: 0 auto;
+  position: relative;
+  -webkit-animation: spinoffPulse 1s infinite linear;
+}
+
+@-moz-keyframes spinPulse {
+  0% {
+    -moz-transform: rotate(160deg);
+    opacity: 0;
+    box-shadow: 0 0 1px #bdd73c;
+  }
+  50% {
+    -moz-transform: rotate(145deg);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: rotate(-320deg);
+    opacity: 0;
+  }
+}
+@-moz-keyframes spinoffPulse {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinPulse {
+  0% {
+    -webkit-transform: rotate(160deg);
+    opacity: 0;
+    box-shadow: 0 0 1px #bdd73c;
+  }
+  50% {
+    -webkit-transform: rotate(145deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-320deg);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes spinoffPulse {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotatecircle {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes rotatecircle {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  color: #363636;
+  //font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.125;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+
+.profile-container {
+  position: relative;
+  width: 10vw;
+  height: 10vw;
+}
+.profile-img {
+  width: 50%;
+  height: 50%;
+  height: auto;
+}
+
 .box {
   border-radius: 12px;
   background-color: #fff;
@@ -287,10 +489,6 @@ textarea:focus {
   transition: all 0.3s;
 }
 
-// .project-layout {
-//   margin-top: 8rem;
-// }
-
 .tech-container {
   display: flex;
   justify-content: center;
@@ -347,14 +545,4 @@ textarea:focus {
 
 .tag:hover::after {
   border-left-color: crimson;
-}
-
-button {
-  border: 2px solid #400101;
-  color: #400101;
-  font-size: 1em;
-  margin: 0.4rem;
-  padding: 0.25em 1em;
-  border-radius: 3px;
-  z-index: 1;
 }

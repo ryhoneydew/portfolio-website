@@ -1,15 +1,16 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+import Logo from './logo'
 
 const Header = ({ siteTitle }) => (
   <nav
-    className="navbar site-header has-text-centered"
+    className="navbar is-primary"
     role="navigation"
     aria-label="main navigation"
   >
     <div className="navbar-brand">
-      <Link>
+      <Link to="/" className="navbar-item" style={{ minWidth: '250px' }}>
         <h1>{siteTitle}</h1>
       </Link>
       <a
@@ -24,7 +25,7 @@ const Header = ({ siteTitle }) => (
         <span aria-hidden="true" />
       </a>
     </div>
-    <div className=" navbar-menu">
+    <div id="navbarBasicExample" className="navbar-menu menu-padding">
       <div className="navbar-end">
         <a className="navbar-item" href="/#about">
           About
@@ -55,20 +56,3 @@ Header.defaultProps = {
 }
 
 export default Header
-
-// <header className="site-header">
-//   <div className="header-container">
-//     <h1 style={{ margin: 0, padding: '1rem' }}>
-//       <Link
-//         to="/"
-//         style={{
-//           color: '#400101',
-//           textDecoration: 'none',
-//         }}
-//       >
-//         {siteTitle}
-//       </Link>
-//     </h1>
-//     <Navigation />
-//   </div>
-// </header>
