@@ -5,9 +5,8 @@ date: '2018-11-13'
 url: 'https://medium.com/@lucia.yang88/redux-thunk-or-redux-saga-part-2-aa4b777a0b21'
 ---
 
-#Yo
+In my last post, I show how Redux-thunk works. Let’s compare it with another popular and similar middleware: Redux-saga. You can find the repo for this project here.
 
-Bacon ipsum dolor amet biltong pastrami tail, pig chicken kevin venison frankfurter jerky cupim leberkas brisket beef tongue spare ribs. Flank short loin capicola, landjaeger ham hock t-bone burgdoggen corned beef ball tip tenderloin cow. Sirloin jerky leberkas pork loin salami sausage. Beef ribs pork loin pancetta brisket. Prosciutto meatloaf hamburger rump bresaola ham hock sausage short loin ribeye picanha fatback beef ribs. Short ribs ground round buffalo boudin cupim sirloin.
+Redux-saga
 
-##Bacon
-Andouille meatball doner short loin beef boudin drumstick swine venison ball tip. Tri-tip pork loin beef ham hock prosciutto ball tip sirloin ham hamburger short ribs capicola fatback pastrami. Corned beef pork belly biltong chuck fatback. Ground round kevin bresaola andouille sausage chuck drumstick ribeye, venison kielbasa t-bone pancetta landjaeger short loin buffalo. Sausage ground round bresaola porchetta turkey tail brisket ribeye pastrami shankle t-bone ham swine meatloaf prosciutto.
+When I met a friend of mine who is a front-end developer, he told me that quite a few companies use redux-saga middleware to handle the asynchronous data flow and it is very powerful! This brought my interests in learning the redux saga. I want to see the differences between redux -thunk and redux-saga. However, the learning process of Redux-saga is not that easy for me. The most daunting part to learn and use redux-saga is writing the generator functions.

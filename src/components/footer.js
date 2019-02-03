@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer is-primary">
       <div className="content has-text-centered">
-        <article className="media center">
+        <article className="meida-container center">
           <span className="icon">
             <a href="mailto:ruiyang0319@gmail.com?subject=Hello Rui!">
               <FaEnvelope size="30px" color="black" />
@@ -28,6 +28,7 @@ const Footer = () => {
             </a>
           </span>
         </article>
+
         <p>© {new Date().getFullYear()}, Built with Gatsby</p>
       </div>
     </footer>

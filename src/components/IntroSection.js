@@ -1,20 +1,6 @@
 import React from 'react'
-import Img from 'gatsby-image'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import './style.scss'
-import { FaEnvelope } from 'react-icons/fa'
-
-// const INTO_IMAGE_QUERY = graphql`
-//   query {
-//     file(relativePath: { regex: "/groupWork/" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 2500) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//   }
-// `
 
 const IntoSection = () => (
   <section className="hero is-primary has-text-centered intro-container">

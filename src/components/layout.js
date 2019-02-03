@@ -2,21 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import Header from './header'
-
 import './style.scss'
-
-import styled from 'styled-components'
 import Helmet from './helmet'
-
 import Footer from './footer'
-
-const MainLayout = styled.main`
-  max-width: 90%;
-  margin: 1rem auto;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 1.5rem;
-`
 
 const Layout = ({ children, location }) => (
   <StaticQuery
@@ -39,7 +27,10 @@ const Layout = ({ children, location }) => (
     render={data => (
       <>
         <Helmet />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header
+          className="is-primary"
+          siteTitle={data.site.siteMetadata.title}
+        />
         <div className="main-layout">
           {children}
           <Footer />

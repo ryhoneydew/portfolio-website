@@ -35,10 +35,7 @@ const Blogs = () => (
   <StaticQuery
     query={LISTING_QUERY}
     render={({ allMarkdownRemark }) => (
-      <section
-        id="blogs"
-        className="section is-medium is-white has-text-centered"
-      >
+      <section id="blogs" className="section is-medium has-text-centered ">
         <div className="container">
           <div className="section-title">
             <div>
@@ -49,14 +46,14 @@ const Blogs = () => (
               Blogs
             </h1>
           </div>
-          <div className="columns is-multiline is-mobile ">
+          <div className="columns is-multiline is-mobile blog-section">
             {allMarkdownRemark.edges.map(edge => (
               <article
                 key={edge.node.frontmatter.slug}
-                className="column is-12-mobile is-half-tablet is-half-desktop blog-container"
+                className="column is-12-mobile is-full-tablet is-full-desktop blog-container"
               >
                 <div className="card">
-                  <h2 className="title">{edge.node.frontmatter.title}</h2>
+                  <h2 className="blog-title">{edge.node.frontmatter.title}</h2>
                   <p className="subtitle">{edge.node.frontmatter.date}</p>
                   <p>{edge.node.excerpt}</p>
                   <Link

@@ -30,33 +30,36 @@ const Projects = () => (
     render={data => (
       <>
         <div className="column is-12-mobile is-half-tablet is-one-third-desktop project-container">
-          <figure className="image">
+          <div className="frame">
             <Img fluid={data.insideTrackImg.childImageSharp.fluid} />
-            <figcaption>
-              <h2>A react-native mobile game</h2>
-              <a href="/inside-track" />
-            </figcaption>
-          </figure>
+            <a href="/inside-track">
+              <div className="details">
+                <p>A mobil game built with react-native</p>
+              </div>
+            </a>
+          </div>
         </div>
         <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
-          <figure className="image">
+          <div className="frame">
             <Img fluid={data.dreamr.childImageSharp.fluid} />
-            <figcaption>
-              <h2>
-                Dreamer is a <span>live streaming</span> application
-              </h2>
-              <a href="/dreamr" />
-            </figcaption>
-          </figure>
+            <a href="/dreamr">
+              <div className="details">
+                <p>
+                  Dreamer is a <span>live streaming</span> application
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
         <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
-          <figure className="image">
+          <div className="frame">
             <Img fluid={data.bookCovers.childImageSharp.fluid} />
-            <figcaption>
-              <h2>Graphic Design</h2>
-              <a href="/design-work" />
-            </figcaption>
-          </figure>
+            <a href="/design-work">
+              <div className="details">
+                <p>Graphic Design</p>
+              </div>
+            </a>
+          </div>
         </div>
       </>
     )}
