@@ -44,9 +44,7 @@ const Projects = () => (
             <Img fluid={data.dreamr.childImageSharp.fluid} />
             <a href="/dreamr">
               <div className="details">
-                <p>
-                  Dreamer is a <span>live streaming</span> application
-                </p>
+                <p>Dreamer is a live streaming application</p>
               </div>
             </a>
           </div>
@@ -56,7 +54,7 @@ const Projects = () => (
             <Img fluid={data.bookCovers.childImageSharp.fluid} />
             <a href="/design-work">
               <div className="details">
-                <p>Graphic Design</p>
+                <p>Collections of illustrations and graphic designs</p>
               </div>
             </a>
           </div>

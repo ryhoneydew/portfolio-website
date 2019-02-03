@@ -52,16 +52,13 @@ const Blogs = () => (
                 key={edge.node.frontmatter.slug}
                 className="column is-12-mobile is-full-tablet is-full-desktop blog-container"
               >
-                <div className="card">
+                <div className="card blog-content">
                   <h2 className="blog-title">{edge.node.frontmatter.title}</h2>
                   <p className="subtitle">{edge.node.frontmatter.date}</p>
                   <p>{edge.node.excerpt}</p>
-                  <Link
-                    className="read-more"
-                    to={`/posts${edge.node.frontmatter.slug}`}
-                  >
-                    Read More
-                  </Link>
+                  <a className="read-more" href={edge.node.frontmatter.url}>
+                    <h2>View on Medium</h2>
+                  </a>
                 </div>
               </article>
             ))}
