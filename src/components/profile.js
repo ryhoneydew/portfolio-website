@@ -8,7 +8,7 @@ const Profile = () => (
       query {
         profile: file(relativePath: { eq: "profile.png" }) {
           childImageSharp {
-            fluid(maxWidth: 1800) {
+            fluid(maxWidth: 2000) {
               ...GatsbyImageSharpFluid
             }
           }

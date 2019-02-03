@@ -1,16 +1,15 @@
 import React from 'react'
-import Profile from './profilePhoto'
+import Profile from './profile'
 
 const About = () => {
   return (
-    <section id="about" className="section is-medium has-text-centered is-long">
+    <section id="about" className="section is-medium has-text-centered">
       <div className="container">
-        <div className="columns is-centered">
-          <div className="column is-two-fifths is-size-3-desktop is-size-4-mobile profile-container">
-            <Profile />
-          </div>
+        <div className="columns is-centered about-container">
+          <Profile className="column profile-container is-12-mobile is-half-tablet is-one-third-desktop" />
+
           <div className="column is-three-fifths">
-            <div className="section-title is-spaced is-size-1-desktop is-size-4-mobile">
+            <div className="section-title is-spaced is-12-mobile is-half-tablet is-half-desktop">
               <div>
                 <div className="outerCircle" />
                 <div className="innerCircle" />

@@ -30,18 +30,22 @@ const Projects = () => (
     render={data => (
       <>
         <div className="column is-12-mobile is-half-tablet is-one-third-desktop project-container">
-          <Img fluid={data.insideTrackImg.childImageSharp.fluid} />
-          <div className="overlay has-text-centered">
-            <h3>A react-native mobile game</h3>
-            <a href="/inside-track">More Info</a>
-          </div>
+          <figure className="image">
+            <Img fluid={data.insideTrackImg.childImageSharp.fluid} />
+            <figcaption>
+              <h2>A react-native mobile game</h2>
+              <a href="/inside-track" />
+            </figcaption>
+          </figure>
         </div>
         <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
           <figure className="image">
             <Img fluid={data.dreamr.childImageSharp.fluid} />
             <figcaption>
-              <h3>A live streaming application</h3>
-              <a href="/dreamr">More Info</a>
+              <h2>
+                Dreamer is a <span>live streaming</span> application
+              </h2>
+              <a href="/dreamr" />
             </figcaption>
           </figure>
         </div>
@@ -49,8 +53,8 @@ const Projects = () => (
           <figure className="image">
             <Img fluid={data.bookCovers.childImageSharp.fluid} />
             <figcaption>
-              <h3>Graphic Design</h3>
-              <a href="/design-work">More Info</a>
+              <h2>Graphic Design</h2>
+              <a href="/design-work" />
             </figcaption>
           </figure>
         </div>
