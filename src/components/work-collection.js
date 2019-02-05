@@ -8,13 +8,7 @@ const WorkCollection = () => {
     >
       <div className="container ">
         <div className="section-title">
-          <div>
-            <div className="outerCircle" />
-            <div className="innerCircle" />
-          </div>
-          <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">
-            My Work
-          </h1>
+          <h1 className="title link link--kukuri">My Work</h1>
         </div>
         <div className="project-grid">
           <div className="columns is-multiline is-mobile">

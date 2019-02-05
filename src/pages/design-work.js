@@ -81,11 +81,26 @@ const DesignWork = () => (
       return (
         <>
           <Layout>
-            <section className="section is-medium has-text-centered project-layout">
-              <div className="container">
-                <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">
-                  Design Work
-                </h1>
+            <div className="container is-12-mobile is-half-tablet is-one-third-desktop project-layout has-text-centered">
+              <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">
+                Design Work
+              </h1>
+              <p>
+                6-years experience on CAD design of women's accessories and
+                graphic design. Recent project was designing a collection of
+                book covers for a lesbian romance publisher. More design works
+                upon request
+              </p>
+              <section className="section is-medium has-text-centered ">
+                <div>
+                  <h3>Tools:</h3>
+                </div>
+                <div className="container tech-items">
+                  <span className="tag ">Adobe Photoshop</span>
+                  <span className="tag">Adobe Illustrator</span>
+                  <span className="tag">Stock photos</span>
+                  <span className="tag">Sketch</span>
+                </div>
                 <div className="columns is-multiline is-mobile">
                   {names.map(name => (
                     <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
@@ -93,8 +108,8 @@ const DesignWork = () => (
                     </div>
                   ))}
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
           </Layout>
         </>
       )

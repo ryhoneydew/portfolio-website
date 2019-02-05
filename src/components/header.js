@@ -4,18 +4,18 @@ import React from 'react'
 
 const Header = ({ siteTitle }) => (
   <nav
-    class="navbar menu-padding is-primary"
+    className="navbar menu-padding is-primary"
     role="navigation"
     aria-label="main navigation"
   >
-    <div class="navbar-brand">
+    <div className="navbar-brand">
       <Link to="/" className="navbar-item" style={{ minWidth: '250px' }}>
         <h1>{siteTitle}</h1>
       </Link>
 
       <a
         role="button"
-        class="navbar-burger burger"
+        className="navbar-burger burger"
         aria-label="menu"
         aria-expanded="false"
         data-target="navbarBasicExample"
@@ -26,8 +26,8 @@ const Header = ({ siteTitle }) => (
       </a>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-end ">
+    <div id="navbarBasicExample" className="navbar-menu">
+      <div className="navbar-end ">
         <a className="navbar-item" href="/#about">
           About
         </a>

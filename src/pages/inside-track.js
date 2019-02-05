@@ -7,7 +7,7 @@ import gif2 from '../images/gif2.gif'
 const InsideTrack = () => {
   return (
     <Layout>
-      <div className="container is-12-mobile is-half-tablet is-one-third-desktop project-layout has-text-centered">
+      <div className="container is-12-mobile is-half-tablet is-one-third-desktop has-text-centered">
         <h1 class="title is-spaced">Inside Track</h1>
         <p>
           Inside Track is a step-counter app that lets you challenge your
@@ -29,17 +29,17 @@ const InsideTrack = () => {
             <span className="tag">Node.js</span>
             <span className="tag">Express.js</span>
             <span className="tag">PostgreSQL</span>
-            <span className="tag">Sequespanze</span>
+            <span className="tag">Sequelize</span>
             <span className="tag">D3.js</span>
             <span className="tag">Expo</span>
             <span className="tag">Native Base</span>
           </div>
           <div>
             <a href="https://github.com/UffishTart">
-              <button>View Code on Github</button>
+              <button className="intro-button">View Code on Github</button>
             </a>
             <a href="https://goo.gl/11KwJn">
-              <button>View Presentation</button>
+              <button className="intro-button">View Presentation</button>
             </a>
           </div>
         </section>

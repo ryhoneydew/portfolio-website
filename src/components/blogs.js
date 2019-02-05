@@ -1,17 +1,5 @@
 import React from 'react'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import styled from 'styled-components'
-
-const Post = styled.article`
-  box-shadow: 0px 3px 10px rgba(25, 17, 34, 0.5);
-  padding: 1rem;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-  a {
-    text-decoration: none;
-    color: #000;
-  }
-`
 
 const LISTING_QUERY = graphql`
   query listingQuery {
@@ -38,13 +26,7 @@ const Blogs = () => (
       <section id="blogs" className="section is-medium has-text-centered ">
         <div className="container">
           <div className="section-title">
-            <div>
-              <div className="outerCircle" />
-              <div className="innerCircle" />
-            </div>
-            <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">
-              Blogs
-            </h1>
+            <h1 className="title link link--kukuri">Blogs</h1>
           </div>
           <div className="columns is-multiline is-mobile blog-section">
             {allMarkdownRemark.edges.map(edge => (

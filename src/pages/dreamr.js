@@ -33,7 +33,7 @@ const Dreamr = () => {
           </div>
           <div>
             <a href="https://github.com/ryhoneydew/Dreamr-A-live-streaming-app">
-              <button>View Code on Github</button>
+              <button className="intro-button">View Code on Github</button>
             </a>
           </div>
         </section>

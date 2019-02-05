@@ -28,7 +28,7 @@ const Layout = ({ children, location }) => (
       <>
         <Helmet />
         <Header
-          className="is-primary"
+          //className="is-primary"
           siteTitle={data.site.siteMetadata.title}
         />
         <div className="main-layout">
