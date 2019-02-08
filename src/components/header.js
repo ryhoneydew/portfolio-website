@@ -4,7 +4,7 @@ import React from 'react'
 
 const Header = ({ siteTitle }) => (
   <nav
-    className="navbar menu-padding is-primary"
+    className="navbar menu-padding"
     role="navigation"
     aria-label="main navigation"
   >

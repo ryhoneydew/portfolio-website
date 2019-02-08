@@ -10,6 +10,17 @@ body {
   //background: #ebf1f3;
   font-family: $secondary-font;
   margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.main-layout {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  // padding-bottom: 3rem;
+  // padding-top: 3rem; /* height of your footer */
 }
 h1 {
   font-family: $primary-font;
@@ -21,7 +32,7 @@ h1 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #5c5858;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -33,26 +44,27 @@ p {
   font-size: 1.5rem;
 }
 
-.main-layout {
-  margin: 2rem auto;
-  max-width: 960;
-  // padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
-}
-.site-header {
+// .main-layout {
+//   margin: 2rem auto;
+//   max-width: 960;
+//   // padding: 0px 1.0875rem 1.45rem;
+//   padding-top: 0;
+// }
+nav {
   font-family: $primary-font;
-  width: 100%;
-  display: grid;
+  // width: 100%;
+  // display: grid;
+  background-color: #fafafa;
   // position: fixed;
-  grid-template-columns: 1fr 3fr;
-  grid-gap: 1.5rem;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin-bottom: 2rem;
-  padding: 1rem 4rem;
+  // grid-template-columns: 1fr 3fr;
+  // grid-gap: 1.5rem;
+  // align-items: center;
+  // justify-content: center;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // margin-bottom: 2rem;
+  // padding: 1rem 4rem;
 }
 
 .navbar-brand {
@@ -79,7 +91,7 @@ p {
   font-size: 1.5rem;
 }
 .is-primary {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #db610f, #e54e72, #19bd9e, #108ab2);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
@@ -137,13 +149,15 @@ p {
   flex-wrap: nowrap;
   flex-direction: column;
   padding: 1rem;
+  color: whitesmoke;
 }
 
 .text-box h1 {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
+  color: whitesmoke;
 }
 .text-box h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .intro-button {
@@ -186,15 +200,15 @@ p {
 }
 
 .link {
+  font-family: $primary-font;
   position: relative;
-  font-size: 8em;
+  font-size: 3rem;
   line-height: 1;
-  color: #9e9ba4;
+  color: #5c5858;
   display: inline-block;
 }
 
 .link--kukuri {
-  text-transform: uppercase;
   overflow: hidden;
 }
 
@@ -227,7 +241,6 @@ p {
   position: absolute;
   z-index: 2;
   overflow: hidden;
-  //color: #202020;
   white-space: nowrap;
   width: 0%;
   transition: width 0.4s 0.3s;
@@ -244,8 +257,8 @@ p {
   align-items: center;
 }
 .title {
-  color: #363636;
-  font-size: 3rem !important;
+  color: #5c5858;
+  font-size: 2rem !important;
   font-weight: 900;
   line-height: 1.125;
   text-align: center;
@@ -266,7 +279,9 @@ p {
   height: 50%;
   height: auto;
 }
-
+.skill-container {
+  padding-top: 0 !important;
+}
 .box {
   border-radius: 12px;
   background-color: #fff;
@@ -275,7 +290,7 @@ p {
   display: flex;
   h2,
   li {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   padding: 0, 1rem;
 }
@@ -347,27 +362,29 @@ p {
   h2 {
     margin-top: 1rem;
     font-size: 1.5rem;
+    font-weight: bold;
+  }
+  p {
+    font-size: 1rem;
   }
 }
-.blog-title {
-  font-size: 2rem;
-}
+
 article {
   padding: 1.5rem;
 }
 .read-more {
   font-size: 0.8rem;
   text-decoration: underline;
-  color: #524763;
+  color: #363636;
 }
 .footer {
-  position: fixed;
-  color: white;
+  //position: absolute;
+  padding: 3rem 1.5rem;
   bottom: 0;
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 8vh;
+  //height: 3vh !important;
   span {
     margin-right: 1.2rem;
   }
@@ -376,6 +393,9 @@ article {
   }
   a:hover {
     color: #400101;
+  }
+  p {
+    font-size: 1rem;
   }
 }
 

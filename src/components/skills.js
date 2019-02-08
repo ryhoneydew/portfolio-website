@@ -27,7 +27,7 @@ const Skills = () => {
       query={SKILL_IMAGE_QUERY}
       render={data => (
         <>
-          <section className="section has-text-centered ">
+          <section className="section has-text-centered skill-container">
             <div className="container">
               <div className="box">
                 <div className="columns is-centered">

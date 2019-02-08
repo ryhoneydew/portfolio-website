@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 const Footer = () => {
   return (
-    <footer className="footer is-primary">
+    <footer className="footer">
       <div className="content has-text-centered">
         <article className="meida-container center">
           <span className="icon">

@@ -5,9 +5,10 @@ import IntoSection from '../components/IntroSection'
 import About from '../components/about'
 import Skills from '../components/skills'
 import WorkCollection from '../components/work-collection'
-
+import Header from '../components/header'
+import Footer from '../components/footer'
 const IndexPage = ({ location }) => (
-  <Layout location={location}>
+  <Layout className="main-layout">
     <IntoSection />
     <About />
     <Skills />
