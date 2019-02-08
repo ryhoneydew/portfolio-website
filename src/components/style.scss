@@ -32,7 +32,7 @@ h1 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: #5c5858;
+  color: $primary-text-color;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -44,12 +44,6 @@ p {
   font-size: 1.5rem;
 }
 
-// .main-layout {
-//   margin: 2rem auto;
-//   max-width: 960;
-//   // padding: 0px 1.0875rem 1.45rem;
-//   padding-top: 0;
-// }
 nav {
   font-family: $primary-font;
   // width: 100%;
@@ -80,7 +74,7 @@ nav {
 }
 .navbar-brand a {
   text-decoration: none;
-  color: #4a4a4a;
+  color: $primary-text-color;
 }
 
 .menu-padding {
@@ -177,7 +171,7 @@ nav {
 
   &:before {
     content: '';
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(199, 198, 198, 0.5);
     height: 100%;
     width: 3em;
     display: block;
@@ -204,7 +198,7 @@ nav {
   position: relative;
   font-size: 3rem;
   line-height: 1;
-  color: #5c5858;
+  color: $primary-text-color;
   display: inline-block;
 }
 
@@ -258,7 +252,7 @@ nav {
 }
 .title {
   color: #5c5858;
-  font-size: 2rem !important;
+  font-size: 2.8rem !important;
   font-weight: 900;
   line-height: 1.125;
   text-align: center;
@@ -359,6 +353,7 @@ nav {
 
 .blog-content {
   padding: 1rem;
+  color: $primary-text-color;
   h2 {
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -373,9 +368,9 @@ article {
   padding: 1.5rem;
 }
 .read-more {
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   text-decoration: underline;
-  color: #363636;
+  color: $primary-text-color;
 }
 .footer {
   //position: absolute;
@@ -496,7 +491,7 @@ textarea:focus {
 #form_button {
   background: none;
   border: solid 2px #474544;
-  color: #474544;
+  color: $primary-text-color;
   cursor: pointer;
   display: inline-block;
   font-family: 'Helvetica', Arial, sans-serif;

@@ -10,7 +10,7 @@ const About = () => {
 
           <div className="column is-three-fifths">
             <div className="section-title is-spaced is-12-mobile is-half-tablet is-half-desktop">
-              <h1 className="title link link--kukuri">About Me</h1>
+              <h1 className="title link link--kukuri">about me</h1>
             </div>
 
             <h2 className="subtitle">

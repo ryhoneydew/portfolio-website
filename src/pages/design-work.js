@@ -83,7 +83,7 @@ const DesignWork = () => (
           <Layout>
             <div className="container is-12-mobile is-half-tablet is-one-third-desktop project-layout has-text-centered">
               <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">
-                Design Work
+                design work
               </h1>
               <p>
                 6-years experience on CAD design of women's accessories and

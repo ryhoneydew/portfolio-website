@@ -26,7 +26,7 @@ const Blogs = () => (
       <section id="blogs" className="section is-medium has-text-centered ">
         <div className="container">
           <div className="section-title">
-            <h1 className="title link link--kukuri">Blogs</h1>
+            <h1 className="title link link--kukuri">blogs</h1>
           </div>
           <div className="columns is-multiline is-mobile blog-section">
             {allMarkdownRemark.edges.map(edge => (
