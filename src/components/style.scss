@@ -41,7 +41,7 @@ h1 {
 
 p {
   font-family: $secondary-font;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 nav {
@@ -564,4 +564,8 @@ textarea:focus {
 
 .tag:hover::after {
   border-left-color: #ee7752;
+}
+
+.page-container {
+  padding: 2rem;
 }

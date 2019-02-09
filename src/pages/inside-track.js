@@ -7,8 +7,8 @@ import gif2 from '../images/gif2.gif'
 const InsideTrack = () => {
   return (
     <Layout>
-      <div className="container is-12-mobile is-half-tablet is-one-third-desktop has-text-centered">
-        <h1 class="title is-spaced">Inside Track</h1>
+      <div className="page-container container is-12-mobile is-half-tablet is-one-third-desktop has-text-centered ">
+        <h1 class="title is-spaced">inside track</h1>
         <p>
           Inside Track is a step-counter app that lets you challenge your
           friends to races where the winner is determined by the greatest
