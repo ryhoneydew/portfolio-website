@@ -58,8 +58,11 @@ const Dreamr = () => (
                   </a>
                 </div>
               </section>
-              <section>
-                <Img fluid={data.dreamrScreen.childImageSharp.fluid} />
+              <section className="is-medium has-text-centered tech-container">
+                <Img
+                  fluid={data.dreamrScreen.childImageSharp.fluid}
+                  style={{ width: '60%' }}
+                />
               </section>
             </div>
           </Layout>

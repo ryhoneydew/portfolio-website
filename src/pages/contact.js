@@ -13,43 +13,47 @@ const Contact = () => {
           method="POST"
         >
           <div className="name">
-            <lable for="name" />
-            <input type="name" name="name" placeholder="Your name" />
+            <label html="name">
+              <input type="name" name="name" placeholder="Your name" />
+            </label>
           </div>
           <div className="email">
-            <lable for="email" />
-            <input type="email" name="email" placeholder="Your email" />
+            <label html="email">
+              <input type="email" name="email" placeholder="Your email" />
+            </label>
           </div>
-          <div class="subject">
-            <label for="subject" />
-            <select
-              placeholder="Subject line"
-              name="subject"
-              id="subject_input"
-              required
-            >
-              <option disabled hidden selected>
-                Subject line
-              </option>
-              <option>I'd like to start a project</option>
-              <option>I'd like to ask a question</option>
-              <option>I'd like to hire you</option>
-              <span>
-                <FaRegArrowAltCircleDown />
-              </span>
-            </select>
+          <div className="subject">
+            <label html="subject">
+              <select
+                placeholder="Subject line"
+                name="subject"
+                id="subject_input"
+                required
+              >
+                <option disabled hidden defaultValue>
+                  Subject line
+                </option>
+                <option>I'd like to start a project</option>
+                <option>I'd like to ask a question</option>
+                <option>I'd like to hire you</option>
+                <span>
+                  <FaRegArrowAltCircleDown />
+                </span>
+              </select>
+            </label>
           </div>
-          <div class="message">
-            <label for="message" />
-            <textarea
-              name="message"
-              placeholder="Hi Rui, I'd like to chat about"
-              cols="30"
-              rows="5"
-              required
-            />
+          <div className="message">
+            <label html="message">
+              <textarea
+                name="message"
+                placeholder="Hi Rui, I'd like to chat about"
+                cols="30"
+                rows="5"
+                required
+              />
+            </label>
           </div>
-          <div class="submit">
+          <div className="submit">
             <input type="submit" value="Send Message" id="form_button" />
           </div>
         </form>
@@ -59,22 +63,3 @@ const Contact = () => {
 }
 
 export default Contact
-// <div className="content has-text-centered">
-//           <article className="media-container">
-//             <span className="icon">
-//               <a href="https://github.com/ryhoneydew">
-//                 <FaGithub size="30px" color="black" />
-//               </a>
-//             </span>
-//             <span className="icon">
-//               <a href="https://www.linkedin.com/in/rui-yang-6a2a4930/">
-//                 <FaLinkedin size="30px" color="black" />
-//               </a>
-//             </span>
-//             <span className="icon">
-//               <a href="https://medium.com/@lucia.yang88">
-//                 <FaMedium size="30px" color="black" />
-//               </a>
-//             </span>
-//           </article>
-//         </div>

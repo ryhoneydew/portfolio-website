@@ -13,20 +13,26 @@ import Img from 'gatsby-image'
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const Logo = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        logo: file(relativePath: { eq: "Rui_Yang.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+const SITE_LOGO_QUERY = graphql`
+  query {
+    siteLogo: file(relativePath: { eq: "site-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
         }
       }
-    `}
-    render={data => <Img fluid={data.logo.childImageSharp.fluid} />}
+    }
+  }
+`
+const Logo = () => (
+  <StaticQuery
+    query={SITE_LOGO_QUERY}
+    render={data => (
+      <Img
+        fluid={data.siteLogo.childImageSharp.fluid}
+        style={{ width: '300px', height: 'auto' }}
+      />
+    )}
   />
 )
 export default Logo
