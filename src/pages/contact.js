@@ -5,7 +5,7 @@ import { FaRegArrowAltCircleDown } from 'react-icons/fa'
 const Contact = () => {
   return (
     <Layout>
-      <div className="container contact-container has-text-centered is-12-mobile is-half-tablet is-one-third-desktop ">
+      <div className="container contact-container has-text-centered is-12-mobile is-half-tablet is-one-third-desktop form-container">
         <h1>&bull; Keep in Touch &bull;</h1>
         <div className="underline" />
         <form
@@ -54,7 +54,12 @@ const Contact = () => {
             </label>
           </div>
           <div className="submit">
-            <input type="submit" value="Send Message" id="form_button" />
+            <input
+              type="submit"
+              value="Send Message"
+              className="intro-button"
+              id="form_button"
+            />
           </div>
         </form>
       </div>
