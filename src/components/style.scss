@@ -284,7 +284,8 @@ nav {
   text-align: center;
   position: relative;
   cursor: pointer;
-  perspective: 500px;
+  overflow: hidden;
+  //perspective: 500px;
 }
 
 .frame .details {
@@ -299,12 +300,17 @@ nav {
   content: '';
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotateY(90deg);
-  transform-origin: 50%;
-  background: rgba(238, 235, 235, 0.8);
-  color: #4a4a4a;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+  background: rgba(35, 213, 171, 0.9);
+  color: whitesmoke;
   opacity: 0;
-  transition: all 0.4s ease-in;
+}
+.details p {
+  font-size: 1.5rem;
 }
 .frame:hover .details {
   transform: translate(-50%, -50%) rotateY(0deg);
