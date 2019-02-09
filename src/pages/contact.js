@@ -5,7 +5,7 @@ import { FaRegArrowAltCircleDown } from 'react-icons/fa'
 const Contact = () => {
   return (
     <Layout>
-      <div className="container contact-container has-text-centered is-12-mobile is-half-tablet is-one-third-desktop form-container">
+      <div className="container contact-container has-text-centered is-12-mobile is-half-tablet is-one-third-desktop">
         <h1>&bull; Keep in Touch &bull;</h1>
         <div className="underline" />
         <form
