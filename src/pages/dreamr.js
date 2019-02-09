@@ -58,10 +58,10 @@ const Dreamr = () => (
                   </a>
                 </div>
               </section>
-              <section className="is-medium has-text-centered tech-container">
+              <section className="is-medium has-text-centered tech-container menu-padding">
                 <Img
                   fluid={data.dreamrScreen.childImageSharp.fluid}
-                  style={{ width: '60%' }}
+                  style={{ width: '80%' }}
                 />
               </section>
             </div>
