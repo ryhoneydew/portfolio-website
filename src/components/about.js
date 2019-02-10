@@ -14,10 +14,21 @@ const About = () => {
             </div>
 
             <h2 className="subtitle">
-              Before becoming a full-stack developer, i worked as fashion
-              designer for 6 years. I’ve also done graphic design and logo
-              design. After graduated from Fullstack Academy of code, I am
-              pursuing the career as a full-stack developer.{' '}
+              I am a software engineer and designer based in Brooklyn, NY.
+              Previously, I have 6+ years of experience in the fashion design
+              industry at the senior level. Since 2017, I started to learn to
+              code and I absolutely love it! After graduated from one of the top
+              coding boot camps, Fullstack Academy of Code, I began the journey
+              working as a software engineer. I am enthusiastic to build things
+              that can impact people's life.
+            </h2>
+            <h2 className="subtitle">
+              When I am not coding, you may find me in some local meet-up events
+              or workshops because I love to meet new friends and learn from
+              others. I love watching new TV shows or going to the theater to
+              catch the latest movie with my husband. I am also a foodie and
+              love to spend time with my friends and families enjoying delicious
+              food.
             </h2>
           </div>
         </div>
