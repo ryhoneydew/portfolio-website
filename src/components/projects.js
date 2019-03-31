@@ -60,7 +60,7 @@ const Projects = () => (
             <a href="/pix-grid">
               <div className="details">
                 <h1>PixGrid</h1>
-                <p>A photograpy gallery</p>
+                <p>A photo gallery built with vanilla Javascript</p>
               </div>
             </a>
           </div>

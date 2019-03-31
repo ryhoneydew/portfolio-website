@@ -55,7 +55,7 @@ const Skills = () => {
                     </h2>
                     <h2>
                       React, Redux, Sequelize, Node.js, Graphql, Express.js,
-                      Gatsby, Socket.io, d3.js
+                      Gatsby, Socket.io, d3.js, Jest and more!
                     </h2>
                   </div>
                   <div className="column right-column">
