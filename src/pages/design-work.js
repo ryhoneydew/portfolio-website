@@ -81,7 +81,7 @@ const DesignWork = () => (
       return (
         <>
           <Layout>
-            <div className=" page-container container is-12-mobile is-half-tablet is-one-third-desktop project-layout has-text-centered">
+            <div className="page-container container is-12-mobile is-half-tablet is-one-third-desktop project-layout has-text-centered">
               <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">
                 design work
               </h1>
