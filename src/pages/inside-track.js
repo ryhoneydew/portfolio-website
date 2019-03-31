@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import gif1 from '../images/gif1.gif'
 import gif2 from '../images/gif2.gif'

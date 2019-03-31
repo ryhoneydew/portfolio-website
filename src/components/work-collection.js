@@ -8,7 +8,7 @@ const WorkCollection = () => {
     >
       <div className="container ">
         <div className="section-title">
-          <h1 className="title link link--kukuri">my work</h1>
+          <h1 className="title">my work</h1>
         </div>
         <div className="project-grid">
           <div className="columns is-multiline is-mobile">

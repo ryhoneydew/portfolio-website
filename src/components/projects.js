@@ -19,6 +19,9 @@ const IMAGE_QUERY = graphql`
     dreamr: file(relativePath: { eq: "Dreamr.jpg" }) {
       ...squareImage
     }
+    pixgrid: file(relativePath: { eq: "pixgrid.jpg" }) {
+      ...squareImage
+    }
     bookCovers: file(relativePath: { eq: "book-cover.jpg" }) {
       ...squareImage
     }
@@ -34,6 +37,7 @@ const Projects = () => (
             <Img fluid={data.insideTrackImg.childImageSharp.fluid} />
             <a href="/inside-track">
               <div className="details">
+                <h1>Inside Track</h1>
                 <p>A mobil game built with react-native</p>
               </div>
             </a>
@@ -44,7 +48,19 @@ const Projects = () => (
             <Img fluid={data.dreamr.childImageSharp.fluid} />
             <a href="/dreamr">
               <div className="details">
+                <h1>Dreamer</h1>
                 <p>Dreamer is a live streaming application</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
+          <div className="frame">
+            <Img fluid={data.pixgrid.childImageSharp.fluid} />
+            <a href="/pix-grid">
+              <div className="details">
+                <h1>PixGrid</h1>
+                <p>A photograpy gallery</p>
               </div>
             </a>
           </div>
@@ -54,6 +70,7 @@ const Projects = () => (
             <Img fluid={data.bookCovers.childImageSharp.fluid} />
             <a href="/design-work">
               <div className="details">
+                <h1>Graphic Design</h1>
                 <p>Collections of illustrations and graphic designs</p>
               </div>
             </a>

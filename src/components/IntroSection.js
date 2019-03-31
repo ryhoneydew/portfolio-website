@@ -19,19 +19,3 @@ const IntoSection = () => (
 )
 
 export default IntoSection
-
-// <div className="follow">
-//   <div className="icon first">
-//     <FaEnvelope size="20px" color="black" />
-//   </div>
-//   <div className="icon">
-//     <FaEnvelope size="20px" color="black" />
-//   </div>
-//   <div className="icon">
-//     <FaEnvelope size="20px" color="black" />
-//   </div>
-//   <div className="icon last">
-//     <FaEnvelope size="20px" color="black" />
-//   </div>
-//   <div className="label">Follow</div>
-// </div>

@@ -28,7 +28,6 @@ const Layout = ({ children, location }) => (
       <>
         <Helmet />
         <Header
-          //className="is-primary"
           siteTitle={data.site.siteMetadata.title}
         />
         <div className="main-layout">
@@ -46,30 +45,4 @@ Layout.propTypes = {
 
 export default Layout
 
-// <Spring
-//           from={{ height: location.pathname === '/' ? 400 : 600 }}
-//           to={{ height: location.pathname === '/' ? 200 : 100 }}
-//         >
-//           {styles => (
-//             <div style={{ overflow: 'hidden', ...styles }}>
-//               <Img fluid={data.file.childImageSharp.fluid} />
-//             </div>
-//           )}
-//         </Spring>
 
-// <MainLayout>
-//   <div>{children}</div>
-//   <Archive />
-// </MainLayout>
-
-// <LandingPageContainer>
-// <Img fluid={data.file.childImageSharp.fluid} />
-// <LandingPageLayout>
-//   <h1>Hello! I am Rui</h1>
-//   <h3>I am a full-stack developer and designer.</h3>
-//   <h3>I design and code beautifully simple things</h3>
-//   <Link to="/campuses">
-//     <Button>Say Hello</Button>
-//   </Link>
-// </LandingPageLayout>
-// </LandingPageContainer>
