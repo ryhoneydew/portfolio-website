@@ -425,7 +425,8 @@ textarea:focus {
 .tech-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-direction: column;
   margin: 2rem;
 }
 

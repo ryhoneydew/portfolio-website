@@ -25,6 +25,9 @@ const IMAGE_QUERY = graphql`
     bookCovers: file(relativePath: { eq: "book-cover.jpg" }) {
       ...squareImage
     }
+    mortgageCalc: file(relativePath: { eq: "mortgage-2.png" }) {
+      ...squareImage
+    }
   }
 `
 const Projects = () => (
@@ -32,6 +35,17 @@ const Projects = () => (
     query={IMAGE_QUERY}
     render={data => (
       <>
+        <div className="column is-12-mobile is-half-tablet is-one-third-desktop project-container">
+          <div className="frame">
+            <Img fluid={data.mortgageCalc.childImageSharp.fluid} />
+            <a href="/mortgage-calc">
+              <div className="details">
+                <h1>Mortgage Calculator</h1>
+                <p>A online tool to calculate your monthly mortgage payment</p>
+              </div>
+            </a>
+          </div>
+        </div>
         <div className="column is-12-mobile is-half-tablet is-one-third-desktop project-container">
           <div className="frame">
             <Img fluid={data.insideTrackImg.childImageSharp.fluid} />

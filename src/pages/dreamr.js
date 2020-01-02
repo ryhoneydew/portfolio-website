@@ -22,7 +22,7 @@ const Dreamr = () => (
       return (
         <>
           <Layout>
-            <div className="page-container container is-12-mobile is-half-tablet is-one-third-desktop project-layout has-text-centered ">
+            <div className="page-container container is-12-mobile is-half-tablet is-one-third-desktop has-text-centered ">
               <h1>dreamr</h1>
               <p>
                 Dreamr connects you with others by sharing anything you want
