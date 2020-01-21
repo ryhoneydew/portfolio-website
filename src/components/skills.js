@@ -47,6 +47,8 @@ const Skills = () => {
                     </h2>
                     <ul>
                       <li>Javasript</li>
+                      <li>Java</li>
+                      <li>SQL</li>
                       <li>Html</li>
                       <li>CSS</li>
                     </ul>
@@ -55,7 +57,7 @@ const Skills = () => {
                     </h2>
                     <h2>
                       React, Redux, Sequelize, Node.js, Graphql, Express.js,
-                      Gatsby, Socket.io, d3.js, Jest and more!
+                      Gatsby, Google Guice, Dropwizard, d3.js, Jest and more!
                     </h2>
                   </div>
                   <div className="column right-column">

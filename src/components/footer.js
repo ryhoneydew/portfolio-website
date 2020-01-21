@@ -1,6 +1,5 @@
 import React from 'react'
 import { FaLinkedin, FaGithub, FaMedium, FaEnvelope } from 'react-icons/fa'
-import { StaticQuery, graphql } from 'gatsby'
 
 const Footer = () => {
   return (
